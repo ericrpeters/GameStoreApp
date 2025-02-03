@@ -1,0 +1,50 @@
+### Create 1
+POST http://localhost:5000/api/games/add HTTP/1.1
+content-type: application/json
+
+{
+  "title": "Sins of a Solar Empire",
+  "description": "A real-time strategy game set in space.",
+  "price": 49.99,
+  "image": "sinsofasolarempire.png", 
+  "seller": "admin"
+}
+
+### Create 2
+POST http://localhost:5000/api/games/add HTTP/1.1
+content-type: application/json
+
+{
+  "title": "Rainbow Six Seige",
+  "description": "Multiplayer FPS.",
+  "price": 49.99,
+  "image": "rainbowsix.png",
+  "seller": "admin"
+}
+
+### Create 3
+POST http://localhost:5000/api/games/add HTTP/1.1
+content-type: application/json
+
+{
+  "title": "Assetto Corsa Evo",
+  "description": "Racing Simulator.",
+  "price": 49.99,
+  "image": "assettocorsaevo.png",
+  "seller": "admin"
+}
+
+### RETRIEVE all documents.
+GET http://localhost:5000/api/games HTTP/1.1
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:5000/api/games/679e8439f4f2dc4817f10850 HTTP/1.1
+
+### PUT
+PUT http://localhost:5000/api/games/679d77b70162c326f4e79f73 HTTP/1.1
+content-type: application/json
+
+{
+  "sold": false
+}
+

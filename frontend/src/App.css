@@ -1,0 +1,106 @@
+body {
+    background-image: url("./images/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding: 0;
+    max-width: 850px;
+    line-height: 1.5;
+}
+
+
+h1, h2 {
+    color: blue;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+form {
+    margin: auto;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#registerSection {
+    text-align: center;
+}
+
+#goBack {
+    text-align: center;
+}
+
+#inquiries {
+    text-align: center;
+}
+
+#welcomeText {
+    text-align: center;
+}
+
+#saleForm {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#savecart {
+    text-align: center;
+    margin: 20px;
+}
+
+#total {
+    text-align: center;
+}
+
+#checkoutButton {
+    text-align: center;
+}
+
+#clearCart {
+    text-align: center;
+}
+
+/* Style for the Navigation container */
+.nav-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Optional: Center vertically if needed */
+    background-color: #333; /* Background color for the navigation */
+    padding: 10px 0; /* Optional padding */
+}
+
+/* Style for navigation links */
+.nav-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.nav-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Font size for links */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
