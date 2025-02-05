@@ -83,24 +83,25 @@ table {
 /* Style for the Navigation container */
 .nav-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Optional: Center vertically if needed */
-    background-color: #333; /* Background color for the navigation */
-    padding: 10px 0; /* Optional padding */
+    justify-content: center; 
+    align-items: center; 
+    background-color: #333; 
+    padding: 10px 0; 
 }
 
 /* Style for navigation links */
 .nav-links {
     display: flex;
-    gap: 20px; /* Space between links */
+    gap: 20px; 
 }
 
 .nav-links a {
-    color: white; /* Link color */
-    text-decoration: none; /* Remove underline from links */
-    font-size: 16px; /* Font size for links */
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px; 
 }
 
 .nav-links a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
 }
+

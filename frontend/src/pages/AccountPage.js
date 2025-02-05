@@ -78,6 +78,13 @@ function AccountPage() {
         }
     };
 
+    const handleConfirmCheckout = () => {
+        const userConfirmed = window.confirm("Are you sure you want to proceed with checkout?");
+        if (userConfirmed) {
+            handleCheckout();
+        }
+    };
+
     const handleCheckout = () => {
         // Calculate total price of items in the cart
         const totalCartAmount = cart.reduce((total, game) => total + game.price, 0);
@@ -148,6 +155,13 @@ function AccountPage() {
         alert("Transaction successful! Your wallet has been updated.");
     };
 
+    const handleConfirmClearCart = () => {
+        const userConfirmed = window.confirm("Are you sure you want to clear the cart?");
+        if (userConfirmed) {
+            handleClearCart();
+        }
+    }
+
     const handleClearCart = () => {
         localStorage.removeItem(`cart_${username}`);
         setCart([]);
@@ -164,7 +178,7 @@ function AccountPage() {
             </tr>
         </table>
         <div id="checkoutButton">
-            <button onClick={() => handleCheckout()}> Checkout </button>
+            <button onClick={() => handleConfirmCheckout()}> Checkout </button>
         </div>
         <h3>Account Listings</h3>
         <table id="accountlistings">
@@ -199,7 +213,7 @@ function AccountPage() {
         </table>
         <h3>My Cart</h3>
         <div id="clearCart">
-            <button onClick={() => handleClearCart()}> Clear Cart </button>
+            <button onClick={() => handleConfirmClearCart()}> Clear Cart </button>
         </div>
         <table id="cart">
             <thead>

@@ -10,7 +10,7 @@ function BuyPage() {
         const userDataString = localStorage.getItem('currentUser');
         if (userDataString) {
             try {
-                const userData = JSON.parse(userDataString);  // Try parsing the string to JSON
+                const userData = JSON.parse(userDataString); 
                 setUsername(userData.userName);
             } catch (error) {
                 console.log("Error parsing user data from localStorage:", error);

@@ -43,7 +43,7 @@ function App() {
     };
 
     const handleLogout = () => {
-        const userDataString = localStorage.getItem('currentUser'); // Get stored user data
+        const userDataString = localStorage.getItem('currentUser'); 
 
         if (userDataString) {
             try {
@@ -93,7 +93,7 @@ function App() {
                 </main>
 
                 <footer>
-                <p>&copy; 2024 Eric Peters</p>
+                <p>&copy; 2025 Eric Peters</p>
                 </footer>
 
             </BrowserRouter>
